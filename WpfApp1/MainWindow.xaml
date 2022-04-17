@@ -1,0 +1,405 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="StopWatc#" Height="449" Width="830" Background="White">
+    <Grid ShowGridLines="False" Visibility="Visible" Background="#FF5E727D" ClipToBounds="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Column="2" Header="Timer" Grid.ColumnSpan="25" Margin="0,8,5,5" Grid.RowSpan="22" Foreground="#FFD4B902" Height="206">
+            <Label x:Name="Lab1" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Height="77" FontFamily="Bahnschrift" FontSize="70" FontStretch="UltraCondensed" RenderTransformOrigin="0.5,0.5" Content="00:00:00" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="6,8,6,6" MouseDown="deselectgrid" PreviewMouseDown="deselectgrid" Width="197" Margin="16,0,0,0" Foreground="#FFD4B902">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.9" ScaleY="1.6"/>
+                        <SkewTransform AngleY="-0.346"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.44" X="1"/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+        </GroupBox>
+        <GroupBox Grid.Column="28" Header="Task | Duration" Grid.ColumnSpan="26" Margin="5,8,0,5" Grid.RowSpan="40" BorderBrush="#FFD5DFE5" Foreground="#FFD4B902" HorizontalAlignment="Left" Width="246"/>
+        <GroupBox Grid.Column="1" Header="Details" Grid.ColumnSpan="26" Grid.RowSpan="18" Margin="9,5,0,5" Grid.Row="22" Foreground="#FFD4B902" Width="246" HorizontalAlignment="Left"/>
+        <Button x:Name="Btn1" Content="Start Timer" VerticalAlignment="Top" Height="66" Grid.ColumnSpan="12" FontWeight="Bold" FontFamily="KacstBook" BorderThickness="0,0,0,0" Background="#FF3CA23C" Margin="7,0,2,0" Grid.Column="2" Click="buttonpick" Grid.Row="14" MouseDown="deselectgrid" PreviewMouseDown="deselectgrid" Grid.RowSpan="7">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+                <Style TargetType="{x:Type ContentControl}">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                </Style>
+                <Style TargetType="{x:Type Button}">
+                    <EventSetter Event="ButtonBase.Click" Handler="buttonpick"/>
+                </Style>
+
+            </Button.Resources>
+        </Button>
+        <Button x:Name="Btn2" Content="Commit Time" VerticalAlignment="Top" Height="66" Grid.ColumnSpan="12" Grid.Column="14" FontWeight="Bold" FontFamily="KacstBook" BorderThickness="0,0,0,0" Background="#FFD4B902" Click="committime" Grid.Row="14" Margin="2,0,2,0" Grid.RowSpan="7" MouseDown="deselectgrid" PreviewMouseDown="deselectgrid">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+                <Style TargetType="{x:Type ContentControl}">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                </Style>
+
+                <Style TargetType="{x:Type Button}">
+                    <EventSetter Event="ButtonBase.Click" Handler="StartClicked2"/>
+                </Style>
+
+            </Button.Resources>
+        </Button>
+        <DataGrid x:Name="Grid1" RowHeaderWidth="0" Grid.Column="29" HeadersVisibility="None" d:ItemsSource="{Binding dt.DefaultView}"  Grid.ColumnSpan="24" Grid.RowSpan="27" MaxColumnWidth="155" HorizontalScrollBarVisibility="Hidden" BorderThickness="5" BorderBrush="#FF5E727D" Grid.Row="3" IsSynchronizedWithCurrentItem="False" GridLinesVisibility="None" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" Background="#FF5E727D" RowBackground="#FF5E727D" Foreground="#FFD4B902" SelectionMode="Extended" CanUserReorderColumns="False" CanUserResizeColumns="False" Visibility="Visible" ClipToBounds="True" KeyDown="RestrictToNumbers" KeyUp="RestrictToNumbers" PreviewKeyDown="RestrictToNumbers" PreviewKeyUp="RestrictToNumbers" TargetUpdated="RetrictToNumbersTyped" Margin="8,0,2,0" >
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="TextTrimming" Value="CharacterEllipsis"></Setter>
+                </Style>
+                <Style TargetType="{x:Type ScrollBar}">
+                    <Style.Triggers>
+                        <Trigger Property="Orientation" Value="Vertical">
+                            <Setter Property="Width" Value="4"/>
+                            <Setter Property="MinWidth" Value="4"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <Style.Triggers>
+                        <Trigger Property="DataGridCell.IsSelected" Value="True">
+                            <Setter Property="BorderThickness" Value="0" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                </Style>
+            </DataGrid.CellStyle>
+        </DataGrid>
+        <Grid />
+        <TextBox x:Name="TaskName" Grid.Column="2" HorizontalAlignment="Left" BorderThickness ="0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="226" Height="20" Grid.Row="24" Grid.ColumnSpan="24" Background="#FFE6F3F7" BorderBrush="Gray" Text="Task Name..." Foreground="#FF929082" MouseDown="deselectgrid" PreviewMouseDown="deselectgrid" Grid.RowSpan="3" Margin="9,3,0,0">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <TextBox x:Name="TaskDescription" Grid.Column="2" BorderThickness ="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="116" Grid.Row="27" Grid.ColumnSpan="24" Background="#FFE6F3F7" BorderBrush="Gray" Margin="9,1,5,0" Foreground="#FF929082" MouseDown="deselectgrid" PreviewMouseDown="deselectgrid" Grid.RowSpan="12" Text="Task Description...">
+            <TextBox.Resources>
+                <!--<Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=TaskDescription}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>-->
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+
+
+        <Button x:Name="Btn3" Content="Edit Tasks" VerticalAlignment="Top" Height="67" Grid.ColumnSpan="12" FontWeight="Bold" FontFamily="KacstBook" BorderThickness="0,0,0,0" Background="#FFD4B902" Margin="4,0,6,0" Grid.Column="29" Grid.Row="32" Grid.RowSpan="7" Click="buttonpick2">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+                <Style TargetType="{x:Type ContentControl}">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                </Style>
+                <Style TargetType="{x:Type Button}">
+                    <EventSetter Event="ButtonBase.Click" Handler="buttonpick2"/>
+                </Style>
+
+            </Button.Resources>
+        </Button>
+        <Button x:Name="Btn4" Content="Combine Tasks" VerticalAlignment="Top" Height="67" Grid.ColumnSpan="13" Grid.Column="40" FontWeight="Bold" FontFamily="KacstBook" BorderThickness="0,0,0,0" Background="#FF3CA23C" Grid.Row="32" Margin="8,0,7,0" Grid.RowSpan="7" Click="Btn4_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+                <Style TargetType="{x:Type ContentControl}">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                </Style>
+
+                <Style TargetType="{x:Type Button}">
+                    <EventSetter Event="ButtonBase.Click" Handler="deselectgrid"/>
+                </Style>
+
+            </Button.Resources>
+        </Button>
+        <Canvas x:Name="CombinationCanvas" Grid.Column="29" Grid.Row="3" Grid.ColumnSpan="25" Margin="6,0,9,5" Grid.RowSpan="28">
+            <TextBox x:Name="CombinationTaskName" BorderThickness ="0" TextWrapping="NoWrap" Width="228" Height="20" Background="#FFE6F3F7" BorderBrush="Gray" Text="Task Name..." Foreground="#FF929082" MouseDown="deselectgrid" PreviewMouseDown="deselectgrid" Canvas.Top="117" Canvas.Left="-1">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="4"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <AccessText x:Name="CombinationLabel" TextWrapping="Wrap" Text="Clicking 'Confirm' will combine the selected Tasks and durations into one Task. &#xD;&#xA;&#xD;&#xA;Optionally, enter a new Task Name and Task Description below - this will overwrite the existing Task Names and Task Descriptions - then click 'Confirm'. " TextAlignment="Left" Width="220" Foreground="#FFD4B902" Height="101" Canvas.Left="3" Canvas.Top="5" FontWeight="SemiBold" FontSize="11"/>
+            <TextBox x:Name="CombinationTaskDesc" BorderThickness ="0" TextWrapping="Wrap" Height="139" Background="#FFE6F3F7" BorderBrush="Gray" Foreground="#FF929082" MouseDown="deselectgrid" PreviewMouseDown="deselectgrid" Canvas.Top="144" Width="228" Text="Task Description..." Canvas.Left="-1">
+                <TextBox.Resources>
+                    <!--<Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=TaskDescription}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>-->
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="4"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+        </Canvas>
+        <Button x:Name="Btn4_Copy" Content="Delete All Tasks And Reset" VerticalAlignment="Top" Height="66" Grid.ColumnSpan="25" Grid.Column="55" FontWeight="Bold" FontFamily="KacstBook" BorderThickness="4,4,4,4" Grid.Row="32" Margin="0,9,4,0" Click="ClearAll" Grid.RowSpan="8" BorderBrush="#FFD4B902" Background="#FFE44A1C">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+                <Style TargetType="{x:Type ContentControl}">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                </Style>
+
+                <Style TargetType="{x:Type Button}">
+                    <EventSetter Event="ButtonBase.Click" Handler="deselectgrid"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <GroupBox x:Name="OutputGroupBox" Grid.Column="55" Header="Output" Grid.ColumnSpan="25" Grid.RowSpan="24" Grid.Row="7" Foreground="#FFD4B902" Width="246" HorizontalAlignment="Left" Margin="0,5,0,1">
+            <GroupBox Header="Type" Height="87" Margin="4,-2,120,0" VerticalAlignment="Top"/>
+        </GroupBox>
+        <TextBox x:Name="textBox8" Grid.Column="56" BorderThickness ="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Grid.Row="21" Grid.ColumnSpan="23" Background="#FFE6F3F7" BorderBrush="Gray" Margin="0,8,5,0" Foreground="#FF929082" Text="Filepath..." Grid.RowSpan="3">
+            <TextBox.Resources>
+                <!--<Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=TaskDescription}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>-->
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Button x:Name="Btn4_Copy1" Content="Output All Tasks To File" VerticalAlignment="Top" Height="30" Grid.ColumnSpan="23" Grid.Column="56" FontWeight="Bold" FontFamily="KacstBook" BorderThickness="0,0,0,0" Background="#FF3CA23C" Grid.Row="27" Margin="0,2,0,0" Grid.RowSpan="4" Click="buildpreview" HorizontalAlignment="Left" Width="226" HorizontalContentAlignment="Center">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+                <Style TargetType="{x:Type ContentControl}">
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                </Style>
+
+                <Style TargetType="{x:Type Button}">
+                    <EventSetter Event="ButtonBase.Click" Handler="deselectgrid"/>
+                </Style>
+
+            </Button.Resources>
+        </Button>
+        <StackPanel Grid.Column="58" Grid.ColumnSpan="8" HorizontalAlignment="Left" Margin="5,4,0,0" Orientation="Vertical" Grid.RowSpan="7" Grid.Row="14" VerticalAlignment="Top"/>
+        <GroupBox Grid.Column="68" Header="Extension" Grid.Row="9" Grid.ColumnSpan="11" Margin="0,0,4,3" Grid.RowSpan="9" Foreground="#FFD4B902"/>
+        <StackPanel Grid.Column="70" Grid.ColumnSpan="7" HorizontalAlignment="Left" Orientation="Vertical" Grid.RowSpan="7" Grid.Row="13" VerticalAlignment="Top">
+            <StackPanel Orientation="Vertical"/>
+        </StackPanel>
+        <TextBox x:Name="textBox7" Grid.Column="56" BorderThickness ="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Grid.Row="19" Grid.ColumnSpan="23" Background="#FFE6F3F7" BorderBrush="Gray" Margin="0,0,5,0" Foreground="#FF929082" Text="Filename..." Grid.RowSpan="2">
+            <TextBox.Resources>
+                <!--<Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=TaskDescription}" Value="">
+                            <Setter Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>-->
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <CheckBox x:Name="checkBox2" Grid.Column="56" Content="Timestamp&#xD;&#xA;filename" HorizontalAlignment="Left" Grid.Row="24" VerticalAlignment="Top" Height="30" Width="74" Foreground="#FFD4B902" FontSize="9" VerticalContentAlignment="Center" Grid.ColumnSpan="8" FontWeight="Normal" Checked="checkBox2_Checked" Margin="6,2,0,0" Grid.RowSpan="4"/>
+        <CheckBox x:Name="checkBox2_Copy" Grid.Column="64" Content="Column&#xD;&#xA;headers" HorizontalAlignment="Center" Grid.Row="24" VerticalAlignment="Top" Height="30" Width="66" Margin="0,2,0,0" Foreground="#FFD4B902" FontSize="9" VerticalContentAlignment="Center" Grid.ColumnSpan="8" FontWeight="Normal" HorizontalContentAlignment="Left" Grid.RowSpan="4"/>
+        <StackPanel Grid.Column="55" Grid.ColumnSpan="25" Margin="2,-4,2,4" Grid.RowSpan="8">
+            <Label Content="StopWatc#" Height="66" Width="244" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" FontFamily="Glasgow Heavy" FontSize="50" FontStretch="UltraExpanded" FontStyle="Oblique" FontWeight="Thin" Margin="8,9,0,5" HorizontalAlignment="Stretch" BorderBrush="#FFE44A1C">
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFD84D23" Offset="1"/>
+                        <GradientStop Color="#FFD4B902" Offset="0.32"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+            </Label>
+        </StackPanel>
+        <Label Grid.Column="64" Content="Phillip Vernon 2022" Grid.ColumnSpan="9" HorizontalAlignment="Left" Height="34" Grid.Row="6" VerticalAlignment="Center" Width="80" FontSize="8" FontStretch="UltraExpanded" Margin="8,0,0,0" Foreground="#FFE6F3F7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5,3,5,5"/>
+        <Grid Grid.Column="57" Grid.ColumnSpan="8" Height="54" Grid.RowSpan="6" Grid.Row="11" VerticalAlignment="Top">
+            <RadioButton x:Name="radioButton1" Content="PIPE&#xA;separated" FontSize="9" Foreground="#FFD4B902" FontWeight="Normal" RenderTransformOrigin="0,0" Panel.ZIndex="4" Margin="0,0,14,0" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+            <RadioButton x:Name="radioButton2" Content="COMMA&#xA;separated" Width="66" FontSize="9" Foreground="#FFD4B902" FontStretch="Normal" FontWeight="Normal" HorizontalAlignment="Left" Margin="0,28,0,0" VerticalContentAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Column="69" Grid.ColumnSpan="8" Height="52" Margin="5,1,8,0" Grid.RowSpan="6" Grid.Row="12" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="40*"/>
+                <ColumnDefinition Width="22*"/>
+            </Grid.ColumnDefinitions>
+            <RadioButton x:Name="radioButton3" Content="CSV file" FontSize="9" Foreground="#FFD4B902" FontWeight="Normal" RenderTransformOrigin="1.364,-3.532" VerticalContentAlignment="Center" Margin="0,-12,1,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="26"/>
+            <RadioButton x:Name="radioButton4" Content="TEXT file" FontSize="9" Foreground="#FFD4B902" FontWeight="Normal" RenderTransformOrigin="1.364,-3.532" VerticalContentAlignment="Center" Margin="0,19,1,10" Grid.ColumnSpan="3"/>
+            <Label x:Name="gridplaceholder" Content="Results will show here..." Foreground="#FFD4B902"/>
+        </Grid>
+        <CheckBox x:Name="checkBox3" Grid.Column="72" Content="Row&#xA;headers" HorizontalAlignment="Left" Grid.Row="24" VerticalAlignment="Top" Height="30" Width="66" Margin="0,2,0,0" Foreground="#FFD4B902" FontSize="9" VerticalContentAlignment="Center" Grid.ColumnSpan="7" FontWeight="Normal" HorizontalContentAlignment="Left" Grid.RowSpan="4"/>
+
+    </Grid>
+
+</Window>
+        
